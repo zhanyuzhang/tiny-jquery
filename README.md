@@ -1,2 +1,1 @@
-# tiny
- Maybe you just need a small part of jQuery
+最近活动页面特别多，因为这些页面比较简单、不打算使用其他框架，但是繁琐的dom操作也不高兴，因些决定把最常用的jQuery方法抽离出来。
