@@ -1,0 +1,24 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": [
+          "last 2 versions",
+          "safari >= 7",
+          "android >= 4.1"
+        ]
+      },
+      "modules": false,
+      "loose": true
+    }]
+  ],
+  "env": {
+    "test": {
+      "presets": [["env"]]
+    }
+  },
+  "plugins": [
+    "transform-object-assign",
+    "transform-object-rest-spread"
+  ]
+}

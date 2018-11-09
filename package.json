@@ -1,0 +1,61 @@
+{
+  "name": "tiny-jquery",
+  "version": "1.0.0",
+  "description": "a tiny jquery",
+  "main": "./src/index.js",
+  "scripts": {
+    "dev": "npm run lint && rollup -c -w --environment NODE_ENV:development",
+    "build": "npm run lint && rollup -c --environment NODE_ENV:production",
+    "lint": "npm run lint:js",
+    "lint:js": "eslint src/**/*.js --fix --format node_modules/eslint-friendly-formatter"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhanyuzhang/tiny-jquery.git"
+  },
+  "keywords": [
+    "tiny",
+    "juqery",
+    "jquery",
+    "lightheight"
+  ],
+  "dependencies": {
+    "knot.js": "^1.1.5",
+    "promise-polyfill": "^8.1.0",
+    "semver-compare": "^1.0.0",
+    "whatwg-fetch": "^2.0.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.1",
+    "ajv": "^6.5.2",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.2.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "husky": "^1.0.0-rc.13",
+    "lint-staged": "^7.2.0",
+    "prettier": "^1.14.0",
+    "regenerator-runtime": "^0.12.0",
+    "rollup": "^0.59.4",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-commonjs": "^9.1.4",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify": "^4.0.0",
+    "scp2": "^0.5.0"
+  },
+  "author": "chesszhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhanyuzhang/tiny-jquery/issues"
+  },
+  "homepage": "https://github.com/zhanyuzhang/tiny-jquery#readme"
+}

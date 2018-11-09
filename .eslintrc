@@ -1,0 +1,27 @@
+{
+  "root": true,
+  "globals": {
+    "WebViewJavascriptBridge": true
+  },
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2017
+  },
+  "extends": [
+    "eslint:recommended",
+    "google",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": ["error", {
+      "singleQuote": true
+    }],
+    "no-console": 0,
+    "require-jsdoc": 0
+  }
+}
